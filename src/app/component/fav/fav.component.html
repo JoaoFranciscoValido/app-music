@@ -1,0 +1,41 @@
+<ng-container *ngIf="musics.length != 0">
+    <div class="fundo">
+        <div class="container">
+            <div class="card-table">
+                <div class="fav-music">
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Favorito</th>
+                                <th>Música</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of musics; let i = index">
+                                <td>{{i+1}}</td>
+                                <td>{{item}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="musics.length == 0">
+    <div class="fundo">
+        <div class="container">
+            <div class="card">
+                <h5 class="card-title">Lista de Favoritos</h5>
+            </div>
+            <div class="center">
+                <img src="https://i.ibb.co/x1Nvwmf/black-music-note-high-resolution-photo-0.png" alt="">
+                <h4>Lista de favoritos vazia!</h4>
+                <h6>Adicionar música agora</h6>
+                <button routerLink="/musics" class="btn ">Adicionar agora</button>
+            </div>
+        </div>
+    </div>
+</ng-container>

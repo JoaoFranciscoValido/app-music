@@ -1,0 +1,30 @@
+<div class="spotify-playlist">
+    <h2>Álbuns</h2>
+    <ng-container *ngFor="let artist of Artists "; let i="index">
+    <ng-container *ngFor="let b of artist.albums "; let i="index">
+        <div class="list">
+            <div class="item1">
+                <img routerLink="/musics" src="{{b.image}}">
+                <div class="play">
+                </div>
+                <h4>{{b.title}}</h4>
+                <p><strong>Artista: </strong>
+                    {{artist.name}}
+                </p>
+                <p><strong> Descrição: </strong> 
+                    {{b.description}}
+                </p>
+                <p><strong>Músicas: </strong>
+                    {{b.songs?.length}}
+                </p> 
+
+            </div>
+        </div>
+    </ng-container>
+    </ng-container>         
+</div>
+
+
+
+
+

@@ -1,0 +1,49 @@
+.navbar{
+    background: #e6e6cc;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.form-control{
+    border-radius:3px;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #111111;
+    background-clip: border-box;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.item img{
+    width: 65px;
+    height: 68px;
+    margin-top: 5px;
+}
+
+.item{
+    margin: 0px 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: black;
+    text-align: center;
+}
+
+.item a{
+
+    position: flex;
+    color: black;
+    text-align: center;
+}
+
+.item a:hover{
+    color: #800000;
+}

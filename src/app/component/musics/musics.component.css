@@ -1,0 +1,123 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #111111;
+    background-clip: border-box;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.item img{
+    width: 65px;
+    height: 68px;
+    margin-top: 5px;
+}
+
+.item{
+    margin: 0px 15px;
+    color: black;
+    text-align: center;
+}
+
+.item a:hover{
+    color: #800000;
+}
+
+.card{
+    padding: 20px;
+    margin: 50px;
+}
+
+.card img{
+    
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+.spotify-playlist {
+    position: absolute;
+    padding: 20px 40px;
+    background-color: #111111;
+}
+
+.spotify-playlist h2 {
+    color: #e6e6cc;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .list {
+    display: flex;
+    float: left;
+    padding: 10px;
+    width: 100;
+    height: 100;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.spotify-playlist .list .item1 {
+    min-width: 140px;
+    width: 340px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item1:hover {
+    background-color: #252525;
+}
+
+.spotify-playlist .list .item1 img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item1 .play {
+    position: relative;
+}
+
+.spotify-playlist .list .item1 .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #800000;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item1:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+
+}
+
+.spotify-playlist .list .item1 h4 {
+    color: #e6e6cc;
+    font-size: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlist .list .item1 p {
+    color: #989898;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}

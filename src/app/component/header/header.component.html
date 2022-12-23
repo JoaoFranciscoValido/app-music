@@ -1,0 +1,31 @@
+<header>
+  <div class="navbar shadow-sm">
+      <div class="navbar-brand align-item-center d-flex">
+        &nbsp;<i style="font-size: 40px;" class="fa-solid fa-music">&nbsp; 
+            
+          </i> 
+          <strong routerLink="/musics" style="font-size: 30px;">AppMusic</strong>
+      </div>
+      
+    
+        <div routerLink="/albuns" class="item">
+            <a >
+                <img src="https://i.ibb.co/tcPGrk8/kisspng-computer-icons-symbol-download-vinyl-record-5acef7fa4e1aa0-1749469015235133383199.png" alt="">
+                <h6 >Álbuns</h6>
+            </a>
+        </div>
+        <div routerLink="/musics" class="item">
+            <a >
+                <img src="https://i.ibb.co/GPd7JTp/pngwing-com.png" alt="">
+                <h6>Músicas</h6>
+            </a>
+        </div>
+    
+    <button routerLink="/fav" class="btn btn-prymary">
+      <i style="font-size: 30px;" class="fa-solid fa-heart"></i>
+      <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+    </button>
+
+</div>
+
+</header>
